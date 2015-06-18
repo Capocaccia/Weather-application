@@ -1,0 +1,28 @@
+{
+  "name": "weather-application",
+  "version": "1.0.0",
+  "description": "Weather app using Ajax, jSon and Geolocation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jade":"./node_modules/.bin/jade ./*.jade ./**/*.jade",
+    "sass":"./node_modules/.bin/node-sass",
+    "build": "npm run jade; npm run sass",
+    "server": "./node_modules/.bin/hs -a localhost -o",
+    "start": "npm run build; npm run webserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Capocaccia/Weather-application.git"
+  },
+  "author": "Carter Capocaccia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Capocaccia/Weather-application/issues"
+  },
+  "homepage": "https://github.com/Capocaccia/Weather-application",
+  "devDependencies": {
+    "jade": "^1.9.2",
+    "node-sass": "^3.0.0"
+  }
+}
