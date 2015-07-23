@@ -1,2 +1,3 @@
 # Weather-application
-Weather app using Ajax, jSon and Geolocation
+
+Weather app using Ajax and Geolocation
