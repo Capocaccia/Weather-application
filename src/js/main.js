@@ -48,7 +48,6 @@ loc.onclick = function() {
       var humi = document.querySelector('.humi');
       var tempf = document.querySelector('.tempf');
       var tempc = document.querySelector('.tempc');
-      var prec = document.querySelector('.prec');
 
       span.innerHTML = data.current_observation.temp_f;
       hum.innerHTML = data.current_observation.relative_humidity;
@@ -58,7 +57,6 @@ loc.onclick = function() {
       humi.innerHTML = data.current_observation.relative_humidity;
       tempf.innerHTML = data.current_observation.temp_f;
       tempc.innerHTML = data.current_observation.temp_c;
-      prec.innerHTML = data.current_observation.precip_today_in;
 
     });
   });
