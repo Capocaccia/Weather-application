@@ -10,34 +10,31 @@
 </head>
  <body>
    <div>
-     <h1>Get weather!</h1>
+     <h1>Can we ride today!?</h1>
    </div>
- <div class = "five columns">
-<input placeholder="Enter Your Zip Code"></input>
-<button class="lookup">Search</button>
-<button class= "location">Use GeoLocation</button>
-<p>Current Temp. (ºF) : <span></span></p>
-<p>Current Humidity: <span class = "hum"><span></p>
+  <div class="four columns">
+    <button class="lookup">Search by Zip</button>
+    <input placeholder="Enter Your Zip Code"></input>
+    <button class= "location">Search by GeoLocation</button>
   </div>
-<table class="five columns">
+<table class="four columns offset-by-two tableTop">
   <tr>
-    <td><span class="theader fore">Forecast</span></td>
-    <td class = "theader day">Day</td>
-    <td class = "theader win">Wind(MPH)</td>
-    <td class = "theader humi">Humidity</td>
-    <td class = "theader tempf">TempºF</td>
-    <td class = "theader tempc">TempºC</td>
+    <td class="theader"><span class="theader city">City</span></td>
+    <td class="theader sky">Sky</td>
+    <td class="theader win">Wind(MPH)</td>
+    <td class="theader hum">Humidity</td>
+    <td class="theader precip">Precipitation Today (.in)</td>
+    <td class="theader tempf">TempºF</td>
   </tr>
   <tr>
-    <td><span class="theader city">City</span></td>
-    <td class = "theader sky">Sky</td>
-    <td class = "theader win">Wind(MPH)</td>
-    <td class = "theader humi">Humidity</td>
-    <td class = "theader tempf">TempºF</td>
-    <td class = "theader tempc">TempºC</td>
-    <td class = "theader prec">Today Precipitation (.in)</td>
+    <td class="theader"><span class="fore">Forecast</span></td>
+    <td class="theader">Sky</td>
+    <td class="theader">Wind(MPH)</td>
+    <td class="theader">Humidity</td>
+    <td class="theader">Precipitation Today (.in)</td>
+    <td class="theader">TempºF</td>
   </tr>
-  </table>
+</table>
    <script src="js/main.js"></script>
  </body>
 </html>
