@@ -1,5 +1,5 @@
 body {
-  background-image: url("leaves.jpg");
+  background-image: url("mtb.jpg");
   margin: 5% 0 0 0;
 }
 
@@ -9,4 +9,12 @@ h1 {
 
 .theader{
   border: none;
+}
+
+button {
+  border-color: black;
+}
+
+.tableTop {
+  margin-top: -80px;
 }
