@@ -6,11 +6,21 @@ lookup.onclick = function() {
   var zip = input.value;
 
   getJSON(API_URL + zip + '.json', function (data) {
-    var span = document.querySelector('span');
-    var hum = document.querySelector('.hum');
+      var span = document.querySelector('span');
+      var hum = document.querySelector('.hum');
+      var city = document.querySelector('.city');
+      var sky = document.querySelector('.sky');
+      var win = document.querySelector('.win');
+      var hum = document.querySelector('.hum');
+      var tempf = document.querySelector('.tempf');
 
-    span.innerHTML = data.current_observation.temp_f;
-    hum.innerHTML = data.current_observation.relative_humidity;
+      span.innerHTML = data.current_observation.temp_f;
+      hum.innerHTML = data.current_observation.relative_humidity;
+      city.innerHTML = data.current_observation.observation_location.city;
+      sky.innerHTML = data.current_observation.weather;
+      win.innerHTML = data.current_observation.wind_mph;
+      tempf.innerHTML = data.current_observation.temp_f;
+      console.log("searching")
   });
 }
 
@@ -47,7 +57,6 @@ loc.onclick = function() {
       var win = document.querySelector('.win');
       var humi = document.querySelector('.humi');
       var tempf = document.querySelector('.tempf');
-      var tempc = document.querySelector('.tempc');
 
       span.innerHTML = data.current_observation.temp_f;
       hum.innerHTML = data.current_observation.relative_humidity;
@@ -56,8 +65,32 @@ loc.onclick = function() {
       win.innerHTML = data.current_observation.wind_mph;
       humi.innerHTML = data.current_observation.relative_humidity;
       tempf.innerHTML = data.current_observation.temp_f;
-      tempc.innerHTML = data.current_observation.temp_c;
+      console.log(data)
+    });
+  });
+};
 
+window.onload = function() {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    var lat = position.coords.latitude;
+    var long = position.coords.longitude;
+
+    getJSON(API_URL + lat + "," + long + '.json', function (data) {
+      var span = document.querySelector('span');
+      var hum = document.querySelector('.hum');
+      var city = document.querySelector('.city');
+      var sky = document.querySelector('.sky');
+      var win = document.querySelector('.win');
+      var tempf = document.querySelector('.tempf');
+      var precip = document.querySelector('.precip');
+
+      span.innerHTML = data.current_observation.temp_f;
+      hum.innerHTML = data.current_observation.relative_humidity;
+      city.innerHTML = data.current_observation.observation_location.city;
+      sky.innerHTML = data.current_observation.weather;
+      win.innerHTML = data.current_observation.wind_mph;
+      tempf.innerHTML = data.current_observation.temp_f;
+      precip.innerHTML = data.current_observation.precip_today_in;
     });
   });
 };
