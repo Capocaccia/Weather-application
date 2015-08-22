@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "jade":"./node_modules/.bin/jade ./*.jade ./**/*.jade",
-    "sass":"./node_modules/.bin/node-sass",
+    "jade": "./node_modules/.bin/jade ./*.jade ./**/*.jade",
+    "sass": "./node_modules/.bin/node-sass",
     "build": "npm run jade; npm run sass",
     "server": "./node_modules/.bin/hs -a localhost -o",
     "start": "npm run build; npm run webserver"
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/Capocaccia/Weather-application",
   "devDependencies": {
-    "jade": "^1.9.2",
     "node-sass": "^3.0.0"
-  }
+  },
+  "dependencies": {}
 }

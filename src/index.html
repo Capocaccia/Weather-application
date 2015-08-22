@@ -9,17 +9,26 @@
    <link rel="stylesheet" href="css/main.css">
 </head>
  <body>
-   <div class="container">
-     <h1>Lookup temperature...</h1>
+   <div>
+     <h1>Get weather!</h1>
    </div>
- <div class = "five columns offset-by-one">
+ <div class = "five columns">
 <input placeholder="Enter Your Zip Code"></input>
 <button class="lookup">Search</button>
 <button class= "location">Use GeoLocation</button>
-<h2>Current Temp. (ºF) : <span><span> </h2>
-<h3>Current Humidity: <span class = "hum"><span></h3>
+<p>Current Temp. (ºF) : <span></span></p>
+<p>Current Humidity: <span class = "hum"><span></p>
   </div>
 <table class="five columns">
+  <tr>
+    <td><span class="fore">Forecast</span></td>
+    <td class = "day">Day</td>
+    <td class = "win">Wind(MPH)</td>
+    <td class = "humi">Humidity</td>
+    <td class = "tempf">TempºF</td>
+    <td class = "tempc">TempºC</td>
+    <td class = "prec">Precipitation (.in)</td>
+  </tr>
   <tr>
     <td><span class="city">City</span></td>
     <td class = "sky">Sky</td>
@@ -28,16 +37,6 @@
     <td class = "tempf">TempºF</td>
     <td class = "tempc">TempºC</td>
     <td class = "prec">Today Precipitation (.in)</td>
-  </tr>
-   <tr>
-    <td><span class="fore">Forecast</span></td>
-    <td class = "day">Day</td>
-    <td class = "win">Wind(MPH)</td>
-    <td class = "humi">Humidity</td>
-    <td class = "tempf">TempºF</td>
-    <td class = "tempc">TempºC</td>
-    <td class = "prec">Precipitation (.in)</td>
-  </tr></td>
   </tr>
   </table>
    <script src="js/main.js"></script>

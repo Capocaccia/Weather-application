@@ -2,3 +2,7 @@ body {
   background-image: url("leaves.jpg");
   margin: 5% 0 0 0;
 }
+
+h1 {
+  margin-left: 40px;
+}
