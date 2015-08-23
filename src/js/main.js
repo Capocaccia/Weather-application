@@ -6,7 +6,6 @@ lookup.onclick = function() {
   var zip = input.value;
 
   getJSON(API_URL + zip + '.json', function (data) {
-      var span = document.querySelector('span');
       var hum = document.querySelector('.hum');
       var city = document.querySelector('.city');
       var sky = document.querySelector('.sky');
@@ -14,13 +13,16 @@ lookup.onclick = function() {
       var hum = document.querySelector('.hum');
       var tempf = document.querySelector('.tempf');
 
-      span.innerHTML = data.current_observation.temp_f;
       hum.innerHTML = data.current_observation.relative_humidity;
       city.innerHTML = data.current_observation.observation_location.city;
       sky.innerHTML = data.current_observation.weather;
       win.innerHTML = data.current_observation.wind_mph;
       tempf.innerHTML = data.current_observation.temp_f;
       console.log("searching")
+      console.log(data.current_observation.temp_f)
+      if(data.current_observation.temp_f > 50 ){
+
+      }
   });
 }
 
@@ -50,15 +52,13 @@ loc.onclick = function() {
     var long = position.coords.longitude;
 
     getJSON(API_URL + lat + "," + long + '.json', function (data) {
-      var span = document.querySelector('span');
       var hum = document.querySelector('.hum');
       var city = document.querySelector('.city');
       var sky = document.querySelector('.sky');
       var win = document.querySelector('.win');
-      var humi = document.querySelector('.humi');
+      var humi = document.querySelector('.hum');
       var tempf = document.querySelector('.tempf');
 
-      span.innerHTML = data.current_observation.temp_f;
       hum.innerHTML = data.current_observation.relative_humidity;
       city.innerHTML = data.current_observation.observation_location.city;
       sky.innerHTML = data.current_observation.weather;
