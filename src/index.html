@@ -6,35 +6,42 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Can we ride?!</title>
    <link rel="stylesheet" href="css/Skeleton-2.0.4/css/skeleton.css">
+   <link href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="css/main.css">
 </head>
  <body>
-   <div>
-     <h1>Can we ride today?!</h1>
+   <div class="row">
+     <h1 class="one five columns offset-by-one">Trail Check</h1>
    </div>
-  <div class="four columns">
-    <button class="lookup">Search by Zip</button>
-    <input placeholder="Enter Your Zip Code"></input>
-    <button class= "location">Search by GeoLocation</button>
+  <div class="row">
+    <div class="four columns offset-by-one">
+      <button class="lookup">Search by Zip</button>
+      <input placeholder="Enter Your Zip Code"></input>
+      <button class= "geoLocate">Search by GeoLocation</button>
+      <button class= "pwmtb">Percy Warner MTB Park</button>
+      <button class= "hct">Hamilton Creek Trails</button>
+      <button class= "stanky">Stanky Creek</button>
+      <button class= "gMtn">Green Mountain</button>
+    </div>
+    <table class="five columns offset-by-one tableTop">
+      <tr>
+        <td class="theader"><span class="theader city">City</span></td>
+        <td class="theader sky">Sky</td>
+        <td class="theader win">Wind(MPH)</td>
+        <td class="theader hum">Humidity</td>
+        <td class="theader precip">Precipitation Today (.in)</td>
+        <td class="theader tempf">TempºF</td>
+      </tr>
+      <tr>
+        <td class="theader"><span class="fore">Forecast</span></td>
+        <td class="theader">Sky</td>
+        <td class="theader">Wind(MPH)</td>
+        <td class="theader">Humidity</td>
+        <td class="theader">Precipitation Today (.in)</td>
+        <td class="theader">TempºF</td>
+      </tr>
+    </table>
   </div>
-<table class="four columns offset-by-two tableTop">
-  <tr>
-    <td class="theader"><span class="theader city">City</span></td>
-    <td class="theader sky">Sky</td>
-    <td class="theader win">Wind(MPH)</td>
-    <td class="theader hum">Humidity</td>
-    <td class="theader precip">Precipitation Today (.in)</td>
-    <td class="theader tempf">TempºF</td>
-  </tr>
-  <tr>
-    <td class="theader"><span class="fore">Forecast</span></td>
-    <td class="theader">Sky</td>
-    <td class="theader">Wind(MPH)</td>
-    <td class="theader">Humidity</td>
-    <td class="theader">Precipitation Today (.in)</td>
-    <td class="theader">TempºF</td>
-  </tr>
-</table>
    <script src="js/main.js"></script>
  </body>
 </html>
