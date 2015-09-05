@@ -1,11 +1,13 @@
 body {
   background-image: url("mtb.jpg");
-  background-size: cover;
+  background-size: auto;
   margin: 5% 0 0 0;
 }
 
 h1 {
   margin-left: 40px;
+  font-family: "Frijole";
+  text-align: center;
 }
 
 .theader{
@@ -14,8 +16,4 @@ h1 {
 
 button {
   border-color: black;
-}
-
-.tableTop {
-  margin-top: -80px;
 }
